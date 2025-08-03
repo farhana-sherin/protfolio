@@ -12,6 +12,7 @@ export const Header = () => {
           <div className="flex items-center gap-3">
             <h1 className="text-white font-extrabold text-xl tracking-wide bg-gradient-to-r from-indigo-400 to-pink-400 bg-clip-text text-transparent">
               MyPortfolio
+              
             </h1>
           </div>
 
