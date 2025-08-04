@@ -11,6 +11,7 @@ export const Footer = () => {
           <h1 className="text-xl md:text-2xl font-bold tracking-wide
                          bg-gradient-to-r from-purple-400 to-pink-500
                          bg-clip-text text-transparent">
+                          
             Farhana Sherin
           </h1>
           <p className="text-gray-400 text-xs md:text-sm mt-1">
