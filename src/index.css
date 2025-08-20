@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Animations (Global) */
+:root {
+  --pulse-slow: pulse-slow 6s infinite ease-in-out;
+  --bounce-slow: bounce-slow 8s infinite ease-in-out;
+  --spin-slow: spin-slow 20s linear infinite;
+}
+
+@keyframes pulse-slow {
+  0%, 100% { transform: scale(1); opacity: 0.6; }
+  50% { transform: scale(1.1); opacity: 0.9; }
+}
+
+@keyframes bounce-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-30px); }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Force apply */
+.animate-pulse-slow { animation: var(--pulse-slow); }
+.animate-bounce-slow { animation: var(--bounce-slow); }
+.animate-spin-slow { animation: var(--spin-slow); }
