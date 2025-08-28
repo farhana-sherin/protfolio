@@ -1,34 +1,24 @@
 import React from "react";
 import { About } from "./About";
+import { Skill } from "./skill";
 
 export const Home = () => {
   return (
     <div>
-      {/* Hero Section */}
-      <section className=" bg-[#0a0a2f] h-screen flex flex-col justify-center items-center text-white overflow-hidden py-20">
-        
-        {/* Background Animated Glows */}
-        <div className="absolute inset-0 -z-10 ">
-          {/* Glow 1 */}
-          <div className="w-[500px] h-[500px] bg-fuchsia-500/20 blur-[180px] rounded-full absolute -top-20 -left-20 animate-pulse-slow"></div>
-          {/* Glow 2 */}
-          <div className="w-[600px] h-[600px] bg-indigo-500/20 blur-[200px] rounded-full absolute bottom-0 right-0 animate-bounce-slow"></div>
-          {/* Glow 3 */}
-          <div className="w-[400px] h-[400px] bg-purple-500/10 blur-[180px] rounded-full absolute top-40 right-40 animate-spin-slow"></div>
-        </div>
+    
+      <section className=" bg-[#0a0a2f] h-screen flex flex-col justify-center items-center text-white overflow-hidden relative top-12">
+      
 
-        {/* Logo */}
+        
         <img
           src="./src/assets/logo.avif"
           className="w-[180px] md:w-[220px] rounded-full border-4 border-purple-500/40 shadow-lg mb-8 hover:scale-105 transition "
           alt="logo"
         />
 
-        {/* Title */}
         <div className="text-center max-w-3xl px-4">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 leading-snug">
-            I'm a
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
+            I'm a <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
               Full Stack Developer
             </span>
           </h1>
@@ -43,7 +33,7 @@ export const Home = () => {
           </p>
         </div>
 
-        {/* CTA Buttons */}
+      
         <div className="flex flex-wrap justify-center gap-6">
           <a
             href="#contact"
@@ -60,8 +50,9 @@ export const Home = () => {
         </div>
       </section>
 
-      {/* About Section */}
+  
       <About />
+      <Skill />
     </div>
   );
 };

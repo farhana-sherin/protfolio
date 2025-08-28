@@ -8,6 +8,8 @@ import './index.css'
 import { App } from './App';
 import ErrorPage from './errorpage';
 import { Home } from './pages/Home';
+import { About } from './pages/About';
+import { Work } from './pages/work';
 
 
 
@@ -22,9 +24,18 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home />,
         
-      }
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/work",
+        element:<Work />,
+      },
     ],
 
+  
     
   },
   
